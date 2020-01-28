@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="c57cd56772d04309b597d3ee489784f8" Name="Diagram1">
+        <EntityTypeShape EntityType="TaRentaModel.Branch" Width="1.5" PointX="0.75" PointY="5.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="TaRentaModel.Car" Width="1.5" PointX="3" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="TaRentaModel.CarType" Width="1.5" PointX="0.75" PointY="1.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="TaRentaModel.Rental" Width="1.5" PointX="5.25" PointY="1" IsExpanded="true" />
+        <EntityTypeShape EntityType="TaRentaModel.User" Width="1.5" PointX="3" PointY="5.125" IsExpanded="true" />
+        <AssociationConnector Association="TaRentaModel.FK_Branches_Branches" ManuallyRouted="false" />
+        <AssociationConnector Association="TaRentaModel.FK_Cars_Branches" ManuallyRouted="false" />
+        <AssociationConnector Association="TaRentaModel.FK_Cars_Cars" ManuallyRouted="false" />
+        <AssociationConnector Association="TaRentaModel.FK_Cars_CarTypes" ManuallyRouted="false" />
+        <AssociationConnector Association="TaRentaModel.FK_Rentals_Cars" ManuallyRouted="false" />
+        <AssociationConnector Association="TaRentaModel.FK_Rentals_Rentals" ManuallyRouted="false" />
+        <AssociationConnector Association="TaRentaModel.FK_Rentals_RentID" ManuallyRouted="false" />
+        <AssociationConnector Association="TaRentaModel.FK_Rentals_Users" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
