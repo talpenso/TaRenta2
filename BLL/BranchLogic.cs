@@ -58,5 +58,18 @@ namespace CarRental
 
         }
 
+        public DTOBranch GetBranch(int BranchId)
+        {
+            Branch DALBranch = db.Branches.Find(BranchId);
+
+            DTOBranch DTOBranch = new DTOBranch();
+
+            DTOBranch.BranchName = DALBranch.BranchName;
+            DTOBranch.BranchAddress = DALBranch.BranchAddress;
+            DTOBranch.GeoData = (float)DALBranch.Geodata;
+
+            return DTOBranch;
+        }
+
     }
 }
