@@ -15,6 +15,5 @@ namespace CarRental
         public int UserId { get; set; }
         public int CarNumber { get; set; }
 
-
     }
 }

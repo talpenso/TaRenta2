@@ -59,6 +59,10 @@
     <Compile Include="UserLogic.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="App.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
     <ProjectReference Include="..\CarRental\DAL.csproj">
       <Project>{c17302ec-bbfc-4db9-bab4-c17797b84adf}</Project>
       <Name>DAL</Name>
@@ -67,10 +71,6 @@
       <Project>{fb43de5e-5571-4c04-9817-7ffb84ba8cb6}</Project>
       <Name>DTO</Name>
     </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
-    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
